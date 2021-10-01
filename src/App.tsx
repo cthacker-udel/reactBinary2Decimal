@@ -1,26 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Row, Col } from 'react-bootstrap';
+import { BinaryNumberForm } from './components/BinaryNumberForm';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function App(): JSX.Element {
+	return (
+		<>
+			<Row>
+				<Col style={{ textAlign: 'center' }}>
+					<BinaryNumberForm value={'0'} />
+				</Col>
+			</Row>
+		</>
+	);
 }
 
 export default App;
